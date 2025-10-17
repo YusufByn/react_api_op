@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Facts from './components/api/Facts'
-import FactById from './components/api/FactById'
-import CreateFact from './components/api/CreateFact'
-import UpdateFact from './components/api/UpdateFact'
-import DeleteFact from './components/api/DeleteFact'
+import Facts from './components/pages/Facts'
+import FactById from './components/pages/FactById'
+import CreateFact from './components/pages/CreateFact'
+import UpdateFact from './components/pages/UpdateFact'
+import DeleteFact from './components/pages/DeleteFact'
 
 function App() {
   return (
