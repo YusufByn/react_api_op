@@ -22,6 +22,7 @@ function CreateFact() {
             headers: {
                 'Content-Type': 'application/ld+json'
             },
+            // transforme les données du formulaire en json
             // on utilise le body pour envoyer les données du formulaire le body c'est les données qu'on envoie
             body: JSON.stringify({ techno, fact })
         })

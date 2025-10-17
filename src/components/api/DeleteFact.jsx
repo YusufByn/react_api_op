@@ -24,6 +24,7 @@ function DeleteFact() {
             <div className="delete-fact-section">
                 <input 
                     type="number" 
+                    min="1"
                     value={factId}
                     onChange={(e) => setFactId(e.target.value)}
                     placeholder="ID du fait à supprimer"

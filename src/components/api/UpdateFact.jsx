@@ -6,7 +6,8 @@ function UpdateFact() {
     const [factId, setFactId] = useState('')
     const [techno, setTechno] = useState('')
     const [fact, setFact] = useState('')
-    const [isLoaded, setIsLoaded] = useState(false) // pour savoir si on a chargé un fait
+    // variable d'état pour savoir si on a chargé un fait
+    const [isLoaded, setIsLoaded] = useState(false) 
 
     // fonction pour charger le fait existant
     const loadFact = async () => {
@@ -31,6 +32,7 @@ function UpdateFact() {
             headers: {
                 'Content-Type': 'application/ld+json'
             },
+            // transforme les données du formulaire en json
             body: JSON.stringify({ techno, fact })
         })
         
@@ -52,6 +54,7 @@ function UpdateFact() {
             <div className="load-fact-section">
                 <input 
                     type="number" 
+                    min="1"
                     // on donne la valeur de la variable d'état factId à la variable value
                     value={factId}
                     // on met à jour la variable d'état factId quand l'utilisateur tape dans l'input

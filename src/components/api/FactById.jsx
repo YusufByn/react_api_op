@@ -26,6 +26,7 @@ function FactById() {
                 {/* on affiche le formulaire de recherche */}
                 <input 
                     type="number" 
+                    min="1"
                     // on donne la valeur de l'input à la variable d'état searchId
                     value={searchId} 
                     // on met à jour la variable d'état searchId quand l'utilisateur tape dans l'input
@@ -36,6 +37,7 @@ function FactById() {
                 <button onClick={fetchFactById}>Rechercher</button>
             </div>
 
+            {/* Si selectedFact existe/ n'est pas null, on affiche le fait trouvé par son id */}
             {selectedFact && (
                 <div>
                     <h3>Fait n°{selectedFact.id}</h3>
