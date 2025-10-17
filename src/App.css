@@ -1,0 +1,397 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Styles pour les faits */
+.facts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.facts-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.facts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.fact-item {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fact-item h3 {
+  color: #444;
+  margin: 0 0 10px 0;
+}
+
+.fact-item p {
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Styles pour la recherche par ID */
+.fact-by-id-container {
+  max-width: 600px;
+  margin: 40px auto 0;
+  padding: 20px;
+}
+
+.fact-by-id-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fact-by-id-container > div:first-of-type {
+  display: flex;
+  gap: 10px;
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.fact-by-id-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.fact-by-id-container button {
+  padding: 10px 20px;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.fact-by-id-container button:hover {
+  background-color: #535bf2;
+}
+
+.fact-by-id-container > div:last-child {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fact-by-id-container h3 {
+  color: #444;
+  margin: 0 0 10px 0;
+}
+
+.fact-by-id-container p {
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Styles pour le formulaire de création */
+.create-fact-container {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 20px;
+}
+
+.create-fact-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create-fact-container form {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-fact-container form > div {
+  margin-bottom: 15px;
+}
+
+.create-fact-container input,
+.create-fact-container select,
+.create-fact-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.create-fact-container textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.create-fact-container button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.create-fact-container button:hover {
+  background-color: #535bf2;
+}
+
+/* Styles pour le formulaire de modification */
+.update-fact-container {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 20px;
+}
+
+.update-fact-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.update-fact-container .load-fact-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.update-fact-container .load-fact-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.update-fact-container .load-fact-section button {
+  padding: 10px 20px;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.update-fact-container .load-fact-section button:hover {
+  background-color: #535bf2;
+}
+
+.update-fact-container form {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.update-fact-container form > div {
+  margin-bottom: 15px;
+}
+
+.update-fact-container select,
+.update-fact-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.update-fact-container textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.update-fact-container form button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.update-fact-container form button:hover {
+  background-color: #535bf2;
+}
+
+/* Styles pour la suppression */
+.delete-fact-container {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 20px;
+}
+
+.delete-fact-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.delete-fact-container .delete-fact-section {
+  display: flex;
+  gap: 10px;
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete-fact-container .delete-fact-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.delete-fact-container .delete-fact-section button {
+  padding: 10px 20px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.delete-fact-container .delete-fact-section button:hover {
+  background-color: #cc0000;
+}
+
+/* Reset des marges */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour Header et Footer */
+.header {
+  background-color: #e8e8e8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: #333;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header nav {
+  display: flex;
+  gap: 10px;
+}
+
+.header nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  background-color: #d0d0d0;
+}
+
+.main-content {
+  min-height: calc(100vh - 160px);
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+.footer {
+  background-color: #e8e8e8;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
