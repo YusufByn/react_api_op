@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Layout from '../Layout'
+import Layout from '../layout/Layout'
 
 function CreateFact() {
     // déclaration de 2 variables d'état pour stocker les valeurs du formulaire

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Layout from '../Layout'
+import Layout from '../layout/Layout'
 
 function Facts() {
     // déclaration d'une variable d'état qui stock les faits

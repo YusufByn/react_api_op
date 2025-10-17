@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Layout from '../Layout'
+import Layout from '../layout/Layout'
 
 function UpdateFact() {
     // variables d'état pour stocker l'ID, la techno et le fait

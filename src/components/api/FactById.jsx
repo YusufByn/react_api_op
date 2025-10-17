@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Layout from '../Layout'
+import Layout from '../layout/Layout'
 
 function FactById() {
     // déclaration d'une variable d'état pour stocker l'id recherché

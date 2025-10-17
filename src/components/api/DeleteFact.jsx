@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Layout from '../Layout'
+import Layout from '../layout/Layout'
 
 function DeleteFact() {
     // variable d'état pour stocker l'ID du fait à supprimer
